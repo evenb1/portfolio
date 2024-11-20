@@ -1,6 +1,9 @@
+"use client"
 import BlurIn from "@/component/BlurIn";
 import Hero from "@/component/Hero";
 import NavBar from "@/component/NavBar";
+import ShootingStars from "@/component/ShootingStars";
+import StarBackground from "@/component/StarBackground";
 import { WordPullUp } from "@/component/WordPullUp";
 import Image from "next/image";
 
@@ -14,8 +17,9 @@ export default function Home() {
         <Hero/>
       
       </section>
-      <section id="work" className="">
-        
+      <section id="projects" className="">
+        <ShootingStars/>
+        <StarBackground/>
       </section>
       <section id="projects">
 
