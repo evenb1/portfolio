@@ -1,11 +1,9 @@
 "use client"
-import BlurIn from "@/component/BlurIn";
-import Hero from "@/component/Hero";
-import NavBar from "@/component/NavBar";
-import ShootingStars from "@/component/ShootingStars";
-import StarBackground from "@/component/StarBackground";
-import { WordPullUp } from "@/component/WordPullUp";
-import Image from "next/image";
+import Hero from "../components/Hero";
+import NavBar from "../components/NavBar";
+import ShootingStars from "../components/ShootingStars";
+import StarBackground from "../components/StarBackground";
+import { TimelineDemo } from "../components/TimelineExperience";
 
 export default function Home() {
   return (
@@ -21,8 +19,8 @@ export default function Home() {
         <ShootingStars/>
         <StarBackground/>
       </section>
-      <section id="projects">
-
+      <section id="experience">
+        <TimelineDemo/>
       </section>
       <section id="contact">
 

@@ -6,7 +6,7 @@ import BlurIn from './BlurIn'
 const Hero = () => {
   return (
     <div className='flex flex-row gap-10 justify-center'>
-        <div className="flex flex-col gap-2 items-start h-screen justify-between text-center">
+        <div className="flex flex-col gap-2 items-start h-screen text-center">
         
 
           <WordPullUp words="Hi, Im Russom" className="text-6xl  text-gray-100 font-publicSans"/>
