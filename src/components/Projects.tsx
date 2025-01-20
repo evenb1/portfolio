@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
 import StarBackground from "./StarBackground";
 import ShootingStars from "./ShootingStars";
 import { PinContainer } from "../components/ui/3d-pin";
 import { motion } from "framer-motion";
-import { FiExternalLink, FiGithub } from "react-icons/fi"; // Import icons
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const Projects = () => {
   const projects = [
@@ -22,7 +21,7 @@ const Projects = () => {
         "Statify is a personalized Spotify data visualization app that helps users understand their music habits. Using Spotify's API, Statify provides insights into top tracks, artists, and genres, all wrapped in a clean and responsive UI. Built with Nextjs, Tailwind, and Typescript, it offers an engaging and interactive experience for music enthusiasts.",
       link: "https://your-statify-link.com",
       source: "https://github.com/evenb1/statify",
-      image: "/images/statify.png",
+      image: "/statify.png",
     },
     {
       title: "Wilson Sporting Goods",
@@ -47,24 +46,19 @@ const Projects = () => {
         className="group relative px-6 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-indigo-300"
       >
         <span>{children}</span>
-
-        {/* TOP */}
         <span className="absolute left-0 top-0 h-[2px] w-0 bg-indigo-300 transition-all duration-100 group-hover:w-full" />
-
-        {/* RIGHT */}
         <span className="absolute right-0 top-0 h-0 w-[2px] bg-indigo-300 transition-all delay-100 duration-100 group-hover:h-full" />
-
-        {/* BOTTOM */}
         <span className="absolute bottom-0 right-0 h-[2px] w-0 bg-indigo-300 transition-all delay-200 duration-100 group-hover:w-full" />
-
-        {/* LEFT */}
         <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-indigo-300 transition-all delay-300 duration-100 group-hover:h-full" />
       </button>
     );
   };
 
   return (
-    <div id="projects" className="relative w-full  h-auto text-white py-12 px-6 sm:px-10 md:px-20 lg:px-36">
+    <div
+      id="projects"
+      className="relative w-full h-auto text-white py-12 px-6 sm:px-10 md:px-20 lg:px-36"
+    >
       {/* Background Layers */}
       <div className="absolute inset-0 -z-20">
         <StarBackground />
@@ -86,7 +80,7 @@ const Projects = () => {
             key={index}
             className={`flex flex-col ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-            } items-center justify-between gap-10`}
+            } items-center justify-center text-center lg:text-left lg:justify-between gap-10`}
           >
             {/* Pin Container with Project Image */}
             <motion.div
@@ -101,6 +95,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
+                    
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -113,7 +108,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8 }}
-              className="w-full lg:w-1/2 text-left"
+              className="w-full lg:w-1/2 flex flex-col items-center lg:items-start"
             >
               <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
               <p className="text-base sm:text-lg font-extralight leading-relaxed mb-6">
@@ -121,12 +116,16 @@ const Projects = () => {
               </p>
 
               {/* Buttons */}
-              <div className="flex gap-6">
-                <DrawOutlineButton onClick={() => window.open(project.link, "_blank")}>
+              <div className="flex gap-6 flex-wrap justify-center lg:justify-start">
+                <DrawOutlineButton
+                  onClick={() => window.open(project.link, "_blank")}
+                >
                   <FiExternalLink className="inline-block mr-2" />
                   Live Demo
                 </DrawOutlineButton>
-                <DrawOutlineButton onClick={() => window.open(project.source, "_blank")}>
+                <DrawOutlineButton
+                  onClick={() => window.open(project.source, "_blank")}
+                >
                   <FiGithub className="inline-block mr-2" />
                   Source Code
                 </DrawOutlineButton>

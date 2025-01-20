@@ -4,7 +4,7 @@ import { NEXT_RESUME_HEADER } from "next/dist/lib/constants";
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-between p-5 sm:p-7 px-6 sm:px-16">
+    <div className="flex items-center justify-between p-5 sm:p-5 px-6 sm:px-16">
       {/* Logo Holder */}
       <div className="flex items-center">
         <img

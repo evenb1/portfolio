@@ -18,15 +18,15 @@ const Hero = () => {
       <div className="flex flex-col items-start max-w-sm sm:max-w-lg md:max-w-2xl">
         <WordPullUp
           words="Hi, I'm Russom"
-          className="text-5xl sm:text-6xl lg:text-8xl text-slate-100 font-publicSans font-bold mb-2 leading-snug text-left"
+          className="text-[56px] sm:text-6xl lg:text-8xl text-slate-100 font-publicSans font-extrabold mb-1 leading-snug text-left"
         />
         <BlurIn
           word="A Web Developer"
-          className="text-slate-100 text-4xl sm:text-5xl lg:text-6xl font-publicSans font-extralight mb-4 leading-snug text-left"
+          className="text-slate-100 text-4xl sm:text-5xl lg:text-6xl font-publicSans font-extralight mb-1 leading-snug text-left"
         />
         <BlurIn
-          word="I create modern and responsive web experiences."
-          className="text-gray-400 text-base sm:text-sm lg:text-xl mb-6 leading-relaxed text-left"
+          word="I create modern web experiences."
+          className="text-gray-400 text-sm  sm:text-sm lg:text-xl mb-6 leading-relaxed text-left"
         />
       </div>
 
