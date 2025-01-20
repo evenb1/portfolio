@@ -89,7 +89,6 @@ const StarBackground: React.FC<StarBackgroundProps> = ({
 
   return (
     <div ref={containerRef} style={{ width: "100%", height: "100%" }}>
-        <h1 className="text-white text-center m-10">Projects</h1>
       <svg
         width="100%"
         height="100%"

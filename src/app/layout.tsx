@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import BackToTopButton from "@/components/BackToTopButton";
 
 export const metadata: Metadata = {
   title: "Russom",
@@ -21,6 +22,7 @@ export default function RootLayout({
         {children}
 
         </div>
+        <BackToTopButton/>
       </body>
     </html>
   );
