@@ -11,7 +11,7 @@ const Projects = () => {
       title: "Drivetime Rentals",
       description:
         "Drivetime Rentals is a modern car rental platform designed for convenience and performance. Built with Next.js and TypeScript, it features a sleek UI, robust user authentication powered by NextAuth, and a Supabase-backed database for managing bookings. Users can filter cars dynamically based on location, type, and price, ensuring a seamless rental experience.",
-      link: "https://your-drivetime-link.com",
+      link: "https://drive-time.vercel.app/",
       source: "https://github.com/evenb1/DriveTime-Rentals/tree/main/drive-time",
       image: "/drivetime.png",
     },
@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Statify",
       description:
         "Statify is a personalized Spotify data visualization app that helps users understand their music habits. Using Spotify's API, Statify provides insights into top tracks, artists, and genres, all wrapped in a clean and responsive UI. Built with Nextjs, Tailwind, and Typescript, it offers an engaging and interactive experience for music enthusiasts.",
-      link: "https://your-statify-link.com",
+      link: "Coming Soon",
       source: "https://github.com/evenb1/statify",
       image: "/statify.png",
     },
